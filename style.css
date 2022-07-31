@@ -55,6 +55,7 @@ body {
 
 .container__titulo {
     font-size: 28px;
+    text-align: left;
 }
 
 .container___imagem {
