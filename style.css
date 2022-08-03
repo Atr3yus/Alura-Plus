@@ -2,6 +2,7 @@
     --branco-principal: #ffffff;
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167bf7;
+    --botao-azul-efeito: #74a6e4;
     --cor-de-fundo: #00030c;
     --fonte-principal: 'Inter'; /*Chamando fonte importada*/
 }
@@ -70,6 +71,11 @@ body {
     width: 90%;
 }
 
+.secundario__imagem:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
 .secundario {
     align-items: center;
     margin:  4em;
@@ -110,5 +116,47 @@ body {
 
 .dispositivos {
     text-align: center;
+}
+
+.rodape {
+    margin: 5em 3em;
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.lista_link {
+    list-style-type: none;
+    margin-bottom: 2em;
+    font-size: 16px;
+}
+
+.lista_link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    text-align: center;
+}
+
+.lista_link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista_link a:active {
+    color: red;
+}
+
+.texto__rodape {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: #00030c;
+    font-weight: bold;
 }
 
